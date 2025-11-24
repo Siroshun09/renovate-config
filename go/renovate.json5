@@ -23,7 +23,7 @@
     }
   ],
   reviewers: [
-    'team:maintainer'
+    'Siroshun09'
   ],
   postUpdateOptions: [
     'gomodTidy'
