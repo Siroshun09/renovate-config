@@ -4,9 +4,7 @@
     {
       matchManagers: [
         'maven',
-        'maven-wrapper',
-        'gradle',
-        'gradle-wrapper'
+        'gradle'
       ],
       "matchPackageNames": [
         '/com\\.destroystokyo\\.paper:paper-api/',
