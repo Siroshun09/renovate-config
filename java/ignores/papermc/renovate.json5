@@ -12,6 +12,20 @@
         '/io\\.github\\.waterfallmc:waterfall-api/'
       ],
       "enabled": false
+    },
+    {
+      matchManagers: [
+        'maven',
+        'gradle'
+      ],
+      "matchPackageNames": [
+        '/io\\.papermc\\.paper:paper-api/',
+        '/dev\\.folia:folia-api/'
+      ],
+      registryUrls: [
+        'https://repo.papermc.io/repository/maven-public/'
+      ],
+      "enabled": true
     }
   ]
 }
