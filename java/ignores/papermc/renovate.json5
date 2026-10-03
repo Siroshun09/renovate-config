@@ -1,6 +1,5 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-  minimumReleaseAge: '7 days',
   packageRules: [
     {
       matchManagers: [
@@ -12,6 +11,19 @@
         '/io\\.github\\.waterfallmc:waterfall-api/'
       ],
       "enabled": false
+    },
+    {
+      matchManagers: [
+        'maven',
+        'gradle'
+      ],
+      "matchPackageNames": [
+        '/io\\.papermc\\.paper:paper-api/',
+        '/dev\\.folia:folia-api/'
+      ],
+      minimumReleaseAge: '3 days',
+      ignoreUnstable: false,
+      allowedVersions: '!/-alpha(?:\\.|$)/'
     },
     {
       matchManagers: [
